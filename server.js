@@ -24,7 +24,16 @@ app.get('/about', (req, res) => res.send('About'));
 app.get('/players', (req, res) => res.json(players));
 app.get('/players/:id', (req, res) => {
   const playerId = req.params.id;
-  res.json({ id: 18, name: 'Kobe' });
+  let selectedPlayer;
+
+  for (let i = 0; i < players.length; i += 1) {
+    const currentPlayer = players[i];
+    if (currentPlayer.id === parseInt(playerId)) {
+      selectedPlayer = currentPlayer;
+    }
+  }
+
+  res.json(selectedPlayer);
 });
 
 // Tell app to listen to HTTP requests on port 3000
