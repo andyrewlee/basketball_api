@@ -1,0 +1,20 @@
+{
+  "name": "basketball_api",
+  "version": "1.0.0",
+  "description": "Returns cool info about basketball",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyrewlee/basketball_api.git"
+  },
+  "author": "andyrewlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyrewlee/basketball_api/issues"
+  },
+  "homepage": "https://github.com/andyrewlee/basketball_api#readme"
+}
